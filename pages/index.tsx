@@ -1,10 +1,11 @@
 import React from "react";
 
 import { Htag, Button, P, Tag, Rating } from "../components";
+import { withLayout } from "../layout/Layout"
 
-export default function Home(): JSX.Element {
+function Home(): JSX.Element {
   return (
-    <div>
+    <>
       <Htag tag='h2'>ssnm</Htag>
       <Button appearance='primary' arrow='right'>Кнопка</Button>
       <Button appearance='ghost' arrow='down'>Кнопка</Button>
@@ -13,6 +14,8 @@ export default function Home(): JSX.Element {
       </P>
       <Tag size='s' color='ghost'>Photoshop</Tag>
       <Rating rating={4} isEditable={true} />
-    </div>
+    </>
   );
 }
+
+export default withLayout(Home);
