@@ -1,9 +1,12 @@
+import { GetStaticProps } from "next";
 import React from "react";
+import axios from 'axios';
 
 import { Htag, Button, P, Tag, Rating } from "../components";
 import { withLayout } from "../layout/Layout"
+import { MenuItem } from "../interfaces/menu.interface";
 
-function Home(): JSX.Element {
+function Home({ menu }: HomeProps): JSX.Element {
   return (
     <>
       <Htag tag='h2'>ssnm</Htag>
@@ -14,8 +17,27 @@ function Home(): JSX.Element {
       </P>
       <Tag size='s' color='ghost'>Photoshop</Tag>
       <Rating rating={4} isEditable={true} />
+
     </>
   );
 }
 
 export default withLayout(Home);
+
+export const getStaticProps: GetStaticProps<HomeProps> = async () => {
+  const firstCategory = 0;
+  const { data: menu } = await axios.post<MenuItem[]>(process.env.NEXT_PUBLIC_DOMAIN + '/api/top-page/find', {
+    firstCategory,
+  });
+  return {
+    props: {
+      menu,
+      firstCategory
+    }
+  };
+};
+
+interface HomeProps extends Record<string, unknown> {
+  menu: MenuItem[];
+  firstCategory: number;
+}
