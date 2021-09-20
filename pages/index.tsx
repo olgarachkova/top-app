@@ -3,7 +3,7 @@ import React from "react";
 import axios from 'axios';
 
 import { Htag, Button, P, Tag, Rating } from "../components";
-import { withLayout } from "../layout/Layout"
+import { withLayout } from "../layout/Layout";
 import { MenuItem } from "../interfaces/menu.interface";
 
 function Home({ menu }: HomeProps): JSX.Element {
