@@ -1,66 +1,66 @@
 .tag {
-	display: inline-block;
+    display: inline-block;
 
-	box-sizing: border-box;
+    box-sizing: border-box;
 
-	border-radius: 20px;
+    border-radius: 20px;
 }
 
 .s {
-	font-size: 12px;
-	font-weight: 500;
+    font-size: 12px;
+    font-weight: 500;
 
-	line-height: 12px;
+    line-height: 12px;
 }
 
 .m {
-	font-size: 14px;
-	line-height: 14px;
+    font-size: 14px;
+    line-height: 14px;
 }
 
 .ghost {
-	padding: 5px 12px;
+    padding: 5px 12px;
 
-	border: 1px solid var(--gray-light);
+    border: 1px solid var(--gray-light);
 
-	font-weight: 500;
+    font-weight: 500;
 }
 
 .red {
-	padding: 3px 9px;
+    padding: 3px 9px;
 
-	color: var(--white);
-	background-color: #DE0000;
+    color: var(--white);
+    background-color: #DE0000;
 
-	font-weight: 600;
-	line-height: 19px;
+    font-weight: 600;
+    line-height: 19px;
 }
 
 .gray {
-	padding: 5px 10px;
+    padding: 5px 10px;
 
-	color: var(--white);
-	background-color: #B3C0D9;
+    color: var(--white);
+    background-color: #B3C0D9;
 
-	font-weight: 600;
+    font-weight: 600;
 }
 
 .green {
-	padding: 5px 8px;
+    padding: 5px 8px;
 
-	color: var(--green);
-	background-color: var(--green-light);
+    color: var(--green);
+    background-color: var(--green-light);
 
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .primary {
-	padding: 2px 7px;
+    padding: 2px 7px;
 
-	color: var(--primary);
-	border: 1px solid var(--primary);
-	background: none;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    background: none;
 
-	font-weight: 500;
-	line-height: 16px;
+    font-weight: 500;
+    line-height: 16px;
 }
