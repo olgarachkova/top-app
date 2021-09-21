@@ -1,0 +1,27 @@
+.advantages {
+    margin-top: 47px;
+}
+
+.advantage {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 9px 30px;
+
+    margin-bottom: 30px;
+}
+
+.advantage:last-child {
+    margin-bottom: 0;
+}
+
+.bigtitle {
+    margin-bottom: 27px;
+}
+
+.title {
+    align-self: center;
+}
+
+.vline {
+    border: 1px solid var(--gray-light);
+}

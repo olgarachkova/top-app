@@ -1,5 +1,6 @@
 .wrapper {
     margin-top: 40px;
+    margin-bottom: 49px;
 }
 
 .title {
@@ -20,4 +21,44 @@
     justify-items: left;
 
     margin-top: 51px;
+}
+
+.seo {
+    margin-top: 30px;
+
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.seo h1 {
+    margin: 0;
+
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.seo h2 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.seo h3 {
+    margin: 10px 0;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27px;
+}
+
+.skillstitle {
+    margin-top: 30px;
+}
+
+.tag {
+    margin: 20px 10px 0 0;
 }

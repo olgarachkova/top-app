@@ -8,7 +8,7 @@ export const P = ({ size = 'm', children, className, ...props }: PProps): JSX.El
         <p className={cn(styles.paragraph, className, {
             [styles.s]: size === 's',
             [styles.m]: size === 'm',
-            [styles.m]: size === 'l',
+            [styles.l]: size === 'l',
         })}
             {...props}
         >
