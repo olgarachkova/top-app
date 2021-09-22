@@ -1,4 +1,4 @@
-import { HhData, Htag, Tag, Advantages, Sort } from "../../components";
+import { HhData, Htag, Tag, Advantages, Sort, Product } from "../../components";
 import { TopPageComponentProps } from "./TopPageComponent.props";
 import styles from './TopPageComponent.module.css';
 import React, { useEffect, useReducer } from "react";
@@ -25,7 +25,7 @@ export const TopPageComponent = ({ firstCategory, page, products }: TopPageCompo
                 <Sort sort={sort} setSort={setSort} />
             </div>
             <div>
-                {sortedProducts && sortedProducts.map(p => <div key={p._id}>{p.title}</div>)}
+                {sortedProducts && sortedProducts.map(p => <Product product={p} key={p._id} />)}
             </div>
             <div className={styles.hhtitle}>
                 <Htag tag='h2'>Вакансии - {page.category}</Htag>
@@ -35,7 +35,7 @@ export const TopPageComponent = ({ firstCategory, page, products }: TopPageCompo
             {page.advantages && page.advantages.length > 0 && <Advantages advantages={page.advantages} />}
             {page.seoText && <div className={styles.seo} dangerouslySetInnerHTML={{ __html: page.seoText }} />}
             <Htag tag='h2' className={styles.skillstitle}>Получаемые навыки</Htag>
-            {page.tags.map(t => <Tag key={t} color='primary' className={styles.tag}>{t}</Tag>)}
+            <div className={styles.tagContainer}>{page.tags.map(t => <Tag key={t} color='primary' className={styles.tag}>{t}</Tag>)}</div>
         </div>
     );
 };
