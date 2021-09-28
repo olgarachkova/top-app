@@ -163,7 +163,27 @@
 }
 
 .reviewbutton {
-    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.reviews {
+    margin-top: -7px;
+}
+
+.closed {
+    overflow: hidden;
+
+    max-height: 0;
+    padding: 0;
+}
+
+.opened {
+    max-height: auto;
+    padding: 30px;
+}
+
+.reviewDivider {
+    margin: 20px 0 30px 0;
 }
 
 @media screen and (max-width: 1320px) {
@@ -296,5 +316,9 @@
             "advblock"
             "hr2"
             "actions";
+    }
+
+    .reviewbutton {
+        margin-bottom: 5px;
     }
 }
