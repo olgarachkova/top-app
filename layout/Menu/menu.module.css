@@ -15,6 +15,10 @@
     gap: 20px;
 }
 
+.firstLevelContainer {
+    cursor: pointer;
+}
+
 .firstLevelActive,
 .firstLevel:hover {
     color: var(--primary);
@@ -49,15 +53,7 @@
 }
 
 .secondLevelBlock {
-    display: none;
-}
-
-.secondLevelBlockOpened {
-    display: block;
-}
-
-.secondLevelBlockOpened:last-child {
-    margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .thirdLevel {
