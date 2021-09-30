@@ -205,6 +205,8 @@
 
     .tags {
         grid-area: tags;
+
+        margin-bottom: 5px;
     }
 
     .price {
