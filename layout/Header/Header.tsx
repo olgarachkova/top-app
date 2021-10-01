@@ -2,7 +2,7 @@ import cn from 'classnames';
 
 import { HeaderProps } from './Header.props';
 import styles from './Header.module.css';
-import Logo from '../logo.svg';
+import { Logo } from '../Logo/Logo';
 import { ButtonIcon } from '../../components';
 import { motion } from 'framer-motion';
 import { Sidebar } from '../Sidebar/Sidebar';

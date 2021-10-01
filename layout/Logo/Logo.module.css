@@ -1,0 +1,13 @@
+.logo {
+    display: grid;
+    grid-template-columns: 41px 1fr;
+    gap: 7px;
+}
+
+.topapp {
+    color: var(--primary);
+
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 41px;
+}

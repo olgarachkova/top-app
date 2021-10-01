@@ -1,0 +1,25 @@
+.headtext {
+    margin-top: 20px;
+}
+
+.headtextItem {
+    text-transform: lowercase;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+
+    margin: 10px 0 20px 0;
+}
+
+.card {
+    padding: 30px;
+}
+
+@media (max-width: 1200px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
